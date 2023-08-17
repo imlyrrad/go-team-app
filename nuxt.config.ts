@@ -8,4 +8,11 @@ export default defineNuxtConfig({
       apiUrl: process.env.PUBLIC_PROD_API_URL,
     },
   },
+  build: {
+    transpile: [
+      '@fortawesome/fontawesome-svg-core',
+      '@fortawesome/pro-solid-svg-icons',
+      '@fortawesome/pro-regular-svg-icons',
+    ]
+  }
 })
